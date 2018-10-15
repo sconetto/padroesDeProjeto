@@ -18,7 +18,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 6. [Composite](src/br/padroes/Composite/Composite.md)
 
-7. Adapter
+7. [Adapter](src/br/padroes/Adapter/Adapter.md)
 
 8. Bridge
 
