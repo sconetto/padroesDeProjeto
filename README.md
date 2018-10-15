@@ -22,7 +22,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 8. Bridge
 
-9. Decorator
+9. [Decorator](src/br/padroes/Decorator/Decorator.md)
 
 10. Facade
 

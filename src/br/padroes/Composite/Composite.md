@@ -7,7 +7,7 @@ Composite é um padrão de projeto estrutural que permite compor objetos em estr
 
 ![CompositeStructure](https://refactoring.guru/images/patterns/diagrams/composite/structure.png)
 
-* Exemplo Montadora de Carros:
+* Exemplo Composição de Arquivos:
 
 ![Composite](https://brizeno.files.wordpress.com/2011/09/composite.png)
 
