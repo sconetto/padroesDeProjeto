@@ -8,9 +8,11 @@ Ou seja, ao invés de criar objetos diretamente em uma classe concreta, nós def
 
 ### Diagramas do Factory Method:
 * Estrutura Básica:
+
 ![factoryMethodStructure](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
 * Exemplo Fábrica de Carros:
+
 ![factoryMethodCarFactory](https://brizeno.files.wordpress.com/2011/09/factory-method.png)
 
 ### Exemplo:

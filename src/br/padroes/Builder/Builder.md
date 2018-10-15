@@ -6,9 +6,11 @@ Separar a construção da representação segue a mesma ideia dos padrões Facto
 
 ### Diagramas do Builder:
 * Estrutura Básica:
+
 ![BuilderStructure](https://refactoring.guru/images/patterns/diagrams/builder/structure.png)
 
 * Exemplo Montadora de Carros:
+
 ![BuilderCarDealership](https://brizeno.files.wordpress.com/2011/09/builder.png)
 
 ### Exemplo:
