@@ -19,7 +19,7 @@ Ou seja, ao invés de criar objetos diretamente em uma classe concreta, nós def
 ### Solução: 
  - O factory method sugere substituir a criação direta de objetos por chamada para método especial de fábrica.
 
-   *OBS*: Todos os produtos devem ter uma interface em comum. 
+    *OBS*: Todos os produtos devem ter uma interface em comum.
 
 ### Prós: 
  - Segue o principio de aberto/fechado.
