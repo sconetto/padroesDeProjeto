@@ -8,7 +8,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 2. [Abstract Factory](src/br/padroes/AbstractMethod/AbstractMethod.md)
 
-3. Builder
+3. [Builder](src/br/padroes/Builder/Builder.md)
 
 4. Prototype
 
