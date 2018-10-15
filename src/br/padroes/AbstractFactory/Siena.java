@@ -1,4 +1,4 @@
-package br.padroes.abstractFactory;
+package br.padroes.AbstractFactory;
 
 public class Siena implements CarroSedan {
 

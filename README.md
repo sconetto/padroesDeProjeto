@@ -16,7 +16,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 ## Estrutural (Structural Design Patterns): 
 
-6. Composite
+6. [Composite](src/br/padroes/Composite/Composite.md)
 
 7. Adapter
 
@@ -55,7 +55,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 23. Visitor 
 
 
-### Referências
+## Referências
 
 * Marcos Brizeno - Padrões de Projeto - https://brizeno.wordpress.com/padroes/
 

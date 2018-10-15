@@ -1,4 +1,4 @@
-package br.padroes.builder;
+package br.padroes.Builder;
 
 public abstract class CarroBuilder {
     protected CarroProduct carro = new CarroProduct();

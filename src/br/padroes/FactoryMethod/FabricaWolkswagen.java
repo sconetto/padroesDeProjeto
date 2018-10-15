@@ -1,4 +1,4 @@
-package br.padroes.factoryMethod;
+package br.padroes.FactoryMethod;
 
 public class FabricaWolkswagen implements FabricaDeCarro {
 

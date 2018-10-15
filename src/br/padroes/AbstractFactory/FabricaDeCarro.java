@@ -1,4 +1,4 @@
-package br.padroes.abstractFactory;
+package br.padroes.AbstractFactory;
 
 public interface FabricaDeCarro {
     CarroSedan criarCarroSedan();

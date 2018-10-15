@@ -1,4 +1,4 @@
-package br.padroes.builder;
+package br.padroes.Builder;
 
 public class ConcessionariaDirector {
     protected CarroBuilder montadora;
