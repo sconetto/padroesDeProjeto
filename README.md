@@ -24,7 +24,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 9. [Decorator](src/br/padroes/Decorator/Decorator.md)
 
-10. Facade
+10. [Facade](src/br/padroes/Facade/Facade.md)
 
 11. Proxy
 
