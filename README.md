@@ -36,7 +36,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 14. Iterator
 
-15. Template Method
+15. [Template Method](src/br/padroes/TemplateMethod/TemplateMethod.md)
 
 16. [Observer](src/br/padroes/Observer/Observer.md)
 
