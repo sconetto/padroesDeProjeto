@@ -38,3 +38,23 @@ O Strategy é um padrão de design comportamental que permite definir uma famíl
 ### Contras:
  - Aumenta a complexidade geral do código, criando várias classes adicionais.
  - O cliente deve estar ciente das diferenças entre as estratégias para escolher uma adequada.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você tem um objeto que deve ser capaz de fazer a mesma tarefa de várias maneiras diferentes.__
+ 
+ :heavy_check_mark: - O padrão Strategy permite que você altere o comportamento do objeto em tempo de execução, fornecendo diferentes sub-objetos que realmente executam o trabalho.
+
+ ---
+ :no_entry: - __Quando você tem muitas classes similares, elas diferem na maneira como executam algum comportamento.__
+ 
+ :heavy_check_mark: - O padrão Strategy permite combinar todas essas classes em uma, extraindo todas as variantes do comportamento em uma hierarquia de classes separada, tornando o comportamento da classe original personalizável.
+
+ ---
+ :no_entry: - __Quando você não deseja expor detalhes de implementação do algoritmo para outras classes.__
+ 
+ :heavy_check_mark: - O padrão Strategy isola códigos, dados internos e dependências de algoritmos de outros objetos, extraindo-os em suas próprias classes.
+
+ ---
+ :no_entry: - __Um algoritmo a ser executado é selecionado por um operador condicional monstruoso. Cada ramo da condicional representa um algoritmo diferente.__
+ 
+ :heavy_check_mark: - A estratégia permite decompor a condicional, extraindo cada algoritmo em suas próprias classes, todas implementando uma interface comum. O contexto delega a execução para um desses objetos, em vez de implementar o comportamento sozinho.

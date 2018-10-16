@@ -36,3 +36,20 @@ State é um padrão de design comportamental que permite que um objeto altere se
 
 ### Contras:
  - Pode ser um exagero se uma máquina de estado tiver apenas alguns estados ou raramente for alterada.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você tem um objeto que se comporta de maneira diferente dependendo do seu estado atual. O número de estados é grande. O código relacionado ao estado é alterado com freqüência.__
+ 
+ :heavy_check_mark: - O padrão State sugere isolar o código, relacionado a um estado dentro de uma classe separada. A classe original chamada "contexto" deve ter uma referência a um desses objetos de estado. Ele delegaria o trabalho a um objeto de estado vinculado. Essa estrutura permite alterar o comportamento do contexto, fornecendo-lhe um objeto de estado diferente.
+
+ ---
+
+ :no_entry: - __Quando uma classe é poluída com condicionais massivos que alteram o comportamento do método de acordo com os valores atuais dos campos da classe.__
+ 
+ :heavy_check_mark: - O padrão State transforma ramificações das condicionais em métodos dentro das classes de estado correspondentes. Em seguida, ele depende do polimorfismo para delegar a execução do comportamento a um objeto de estado vinculado.
+
+ ---
+
+ :no_entry: - __Quando você tem muito código duplicado em estados e transições semelhantes da máquina de estado baseada em condicional.__
+ 
+ :heavy_check_mark: -O padrão State permite compor hierarquias de classes de estado e reduzir a duplicação, movendo o código comum para as classes base da hierarquia.

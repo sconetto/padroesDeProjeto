@@ -26,3 +26,14 @@ O Decorator é um padrão de design estrutural que permite anexar novos comporta
 ### Contras:
  - É difícil configurar um objeto multi-decorado (multi-wrapped).
  - Várias classes pequenas.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você precisa atribuir dinamicamente os comportamentos aos objetos sem quebrar o código que usa esses objetos.__
+ 
+ :heavy_check_mark: - O padrão Decorator permite atribuir novos comportamentos a objetos dinamicamente e implicitamente a um código de cliente. Os objetos podem ser agrupados com vários wrappers ao mesmo tempo, resultando em um comportamento de empilhamento de todos os wrappers.
+
+ ---
+
+ :no_entry: - __Quando não é possível ou estranho estender o comportamento do objeto com herança.__
+ 
+ :heavy_check_mark: - Muitas linguagens de programação têm a palavra-chave `final` que pode ser usada para impedir a extensão de uma classe. Ao lidar com esse código, a única opção para a extensão é usar o padrão Decorator.

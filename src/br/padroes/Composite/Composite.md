@@ -23,3 +23,14 @@ Composite é um padrão de projeto estrutural que permite compor objetos em estr
 
 ### Contras:
  - Cria um design de classe muito geral.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você precisa implementar uma estrutura semelhante a uma árvore que possui elementos e contêineres simples.__
+
+ :heavy_check_mark: - O padrão Composite oferece dois elementos básicos: folhas simples e contêineres complexos que armazenam outras folhas ou contêineres, e assim por diante. O padrão força os contêineres a trabalhar com todos os elementos filhos por meio da interface comum, o que permite executar operações recursivamente em toda a estrutura da árvore.
+
+ ---
+
+ :no_entry: - __Quando os clientes devem tratar elementos simples e complexos de maneira uniforme.__
+
+ :heavy_check_mark: - Graças à interface comum entre folhas e contêineres, o código do cliente não precisa se preocupar com o tipo de objeto com o qual trabalha.

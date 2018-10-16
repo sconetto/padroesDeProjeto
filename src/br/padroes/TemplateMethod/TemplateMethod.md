@@ -33,3 +33,14 @@ A classe base declara o algoritmo 'placeholders' e as classes derivadas implemen
  - Você está limitado ao esqueleto do algoritmo existente (template).
  - Você pode violar o [Princípio de Substituição de Liskov](https://pt.wikipedia.org/wiki/Princ%C3%ADpio_da_substitui%C3%A7%C3%A3o_de_Liskov) ao suprimir uma implementação de etapas padrão por meio de uma subclasse.
  - O Template Method tende a ser mais difícil de manter por quanto mais etapas tiver.
+
+### Aplicabilidade:
+ :no_entry: - __Quando subclasses devem ser capazes de estender o algoritmo base sem alterar sua estrutura.__
+ 
+ :heavy_check_mark: - O Template Method transforma um algoritmo monolítico em uma série de etapas individuais, que podem ser facilmente estendidas por subclasses, enquanto mantém a estrutura, definida em uma superclasse, intacta.
+
+ ---
+
+ :no_entry: - __Quando você tem várias classes que fazem coisas semelhantes com apenas pequenas diferenças. Quando você altera uma das classes, também precisa alterar outras.__
+ 
+ :heavy_check_mark: - O Template Method facilita a extração de etapas semelhantes do algoritmo em uma classe base. Código que difere entre subclasses pode permanecer dentro de subclasses.

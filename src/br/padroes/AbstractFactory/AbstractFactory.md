@@ -1,13 +1,13 @@
-## Abstract Method
+## Abstract Factory
 
-O padrão Abstract Method possui a seguinte intenção:
+O padrão Abstract Factory possui a seguinte intenção:
 
 Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
 
-### Diagramas do Abstract Method
+### Diagramas do Abstract Factory
 * Estrutura Básica:
 
-![AbstractMethodStructure](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure.pngs)
+![AbstractMethodStructure](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure.png)
 
 * Exemplo Fábrica de Carros:
 
@@ -19,7 +19,7 @@ Fornece uma interface para criar famílias de objetos relacionados ou dependente
     *OBS*: Todos os produtos devem ter uma interface em comum.
 
 ### Solução
- - Utilizar o Abstract Method fazendo com que cada variante de produto siga uma interface em comum para aquela produto, no caso do exemplo deve existir para cada fábrica de produto uma interface que crie carros sendans e carros populares.
+ - Utilizar o Abstract Factory fazendo com que cada variante de produto siga uma interface em comum para aquela produto, no caso do exemplo deve existir para cada fábrica de produto uma interface que crie carros sendans e carros populares.
 
 ### Prós: 
  - Segue o principio de aberto/fechado.

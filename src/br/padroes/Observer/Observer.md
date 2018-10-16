@@ -32,3 +32,16 @@ Observer (Observador) é um padrão de design comportamental que permite definir
 
 ### Contras:
  - Os Assinantes são notificados em ordem aleatória.
+
+### Aplicabilidade:
+ :no_entry: - __Quando alterações no estado de um objeto podem exigir a alteração de outros objetos, mas são desconhecidos antecipadamente ou mudam dinamicamente.__
+
+ __Por exemplo, você está desenvolvendo uma estrutura de GUI focada em botões. Você deseja que seus clientes conectem alguns códigos personalizados aos seus botões para que sejam acionados sempre que os usuários pressionarem o botão.__
+ 
+ :heavy_check_mark: - O padrão Observer permite que qualquer objeto que implemente a interface do assinante se inscreva para as notificações de eventos em objetos do publicador.
+
+ ---
+
+ :no_entry: - __Alguns objetos devem observar os outros, mas apenas por um tempo limitado ou em casos específicos.__
+ 
+ :heavy_check_mark: - O padrão Observer permite que os editores mantenham listas dinâmicas de inscritos. Todos os assinantes podem entrar e sair da lista sempre que desejarem em tempo de execução.

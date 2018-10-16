@@ -26,3 +26,14 @@ Facade é um padrão de design estrutural que permite fornecer uma interface sim
 
 ### Contras:
  - Facede (Fachada) corre o risco de se tornar um objeto divino([god object anti-pattern](https://en.wikipedia.org/wiki/God_object)), acoplado a todas as classes de aplicativos.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você precisa ter uma interface simples, mas limitada, para um subsistema complexo.__
+ 
+ :heavy_check_mark: - Frequentemente, os subsistemas se tornam mais complexos ao longo do tempo. Mesmo a aplicação de padrões de design geralmente leva à criação de mais classes. O subsistema pode se tornar mais flexível e mais fácil de reutilizar em diferentes contextos, mas a quantidade de código padrão requer também cresce. O Facade tenta consertá-lo fornecendo acesso a uma fração de um subsistema que atenda às necessidades dos clientes.
+
+ ---
+
+ :no_entry: - __Quando você deseja estruturar um subsistema em camadas.__
+ 
+ :heavy_check_mark: - Crie fachadas para definir pontos de entrada para cada nível de um subsistema. Se vários subsistemas dependerem um do outro, você poderá limitar o acoplamento, exigindo que os subsistemas se comuniquem apenas por meio de fachadas.

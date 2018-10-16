@@ -26,3 +26,26 @@ Separar a construção da representação segue a mesma ideia dos padrões Facto
 
 ### Contras:
  - Aumenta a complexidade do código ao criar multiplas classes adicionais.
+
+### Aplicabilidade:
+ :no_entry: - __Quando você tem um construtor "telescópico".__
+
+ __Um construtor com uma dúzia de parâmetros opcionais não é conveniente para chamar. Você precisa especificar todos os parâmetros, mesmo que não precise deles.__
+
+ __Para aliviar a dor, pode-se sobrecarregar um construtor longo e criar várias versões mais curtas com menos parâmetros. Eles ainda chamarão o construtor principal, mas passarão alguns valores padrão em parâmetros omitidos.__
+
+ :heavy_check_mark: - O padrão Builder permite construir objetos passo a passo. Além disso, você pode usar apenas as etapas necessárias e ignorar as etapas opcionais ao criar um objeto simples.
+ 
+ ---
+
+ :no_entry: - __Quando seu código tem que criar diferentes representações de um produto (por exemplo, casas de pedra e de madeira). A construção do produto tem etapas semelhantes que diferem nos detalhes. Além disso, embora os produtos possam ser semelhantes, eles não precisam ter uma classe ou interface de base comum.__
+
+ :heavy_check_mark: - O Builder pode ser usado para construir diferentes produtos usando o mesmo processo de construção.
+
+ Cada produto distinto será representado por uma classe de construtor separada. Código que controla a ordem de construção pode viver em uma única classe de diretor.
+
+ ---
+
+ :no_entry: - __Quando você precisa construir uma árvore [Composite](https://github.com/sconetto/padroesDeProjeto/blob/master/src/br/padroes/Composite/Composite.md) ou outro objeto complexo.__
+
+ :heavy_check_mark: - O Builder constrói produtos passo a passo. Ele permite construções diferidas ou até mesmo recursivas que são obrigatórias quando você está trabalhando com estruturas de árvores. O Builder não expõe o produto inacabado durante as etapas de construção. Isso impede que o código do cliente obtenha resultados corrompidos.

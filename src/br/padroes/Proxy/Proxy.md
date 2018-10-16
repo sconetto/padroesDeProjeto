@@ -29,3 +29,34 @@ Proxy é um padrão de design estrutural que permite fornecer um substituto ou e
 
 ### Contras:
  - Atraso na resposta quando chamado o serviço.
+
+### Aplicabilidade:
+ :no_entry: - __Inicialização lenta (proxy virtual - _Lazy Initiation_). Quando você tem um objeto pesado que carrega dados de um sistema de arquivos, rede ou banco de dados.__
+ 
+ :heavy_check_mark: - Em vez de carregar dados no início do aplicativo, pode-se atrasar a inicialização do objeto para um momento em que é necessário.
+
+ ---
+
+ :no_entry: - __Controle de acesso (proxy de proteção). Quando um programa tem diferentes tipos de usuários e você deseja proteger um objeto contra o uso não autorizado. Por exemplo, quando os objetos são partes cruciais de um sistema operacional e os programas (incluindo os maliciosos) são seus clientes.__
+
+ :heavy_check_mark: - O proxy pode verificar as credenciais do cliente em cada solicitação e passar a solicitação para o objeto de serviço somente se o acesso for concedido.
+
+ ---
+
+ :no_entry: - __Execução local de um serviço remoto (proxy remoto). Quando um objeto de serviço real está localizado em um servidor remoto.__
+ 
+ :heavy_check_mark: - Neste caso, o proxy passa a solicitação do cliente para um objeto de serviço remoto pela rede, manipulando todos os detalhes da transferência de rede.
+
+ ---
+ 
+ :no_entry: - __Objetos de armazenamento em cache (referência "inteligente" - _smart reference_). Quando você precisa armazenar em cache os resultados das solicitações do cliente e gerenciar seu ciclo de vida (quando os resultados são pesados).__
+ 
+ :heavy_check_mark: - O proxy pode contar o número de referência para um objeto de serviço ou resultados armazenados em cache. Quando todas as referências forem liberadas, o proxy poderá destruir o objeto que rastreia (por exemplo, encerrar a conexão com o banco de dados).
+
+ O proxy também pode controlar se o cliente alterou o objeto de serviço. Permite reutilizar o objeto inalterado e salva os recursos do sistema.
+
+ ---
+ 
+ :no_entry: - __Solicitação de log (proxy de log - _logging proxy_). Quando você precisa manter um histórico de solicitações para um objeto de serviço.__
+ 
+ :heavy_check_mark: - O proxy pode registrar cada solicitação antes de transmiti-la a um objeto de serviço.
