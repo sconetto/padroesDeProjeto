@@ -33,13 +33,13 @@ Ou seja, ao invés de criar objetos diretamente em uma classe concreta, nós def
  - Requer subclasses extras.
 
 ### Aplicabilidade:
- :no_entry: - __Quando você não sabe exatamente os tipos e dependências dos objetos com que seu código vai funcionar.__ 
+ :no_entry: - __Quando você não sabe exatamente os tipos e dependências dos objetos com que seu código vai funcionar.__
 
- &nbsp;&nbsp;__Por exemplo, ler e gravar dados de várias fontes - sistema de arquivos, banco de dados ou rede. Todas essas fontes teriam diferentes tipos, dependências e código de inicialização.__
+ __Por exemplo, ler e gravar dados de várias fontes - sistema de arquivos, banco de dados ou rede. Todas essas fontes teriam diferentes tipos, dependências e código de inicialização.__
  
- :heavy_check_mark: - O Factory Method pode ocultar os detalhes de implementação de um produto do outro código. 
+ :heavy_check_mark: - O Factory Method pode ocultar os detalhes de implementação de um produto do outro código.
 
- &nbsp;&nbsp;Para suportar um novo tipo de produto, você só precisará criar uma nova subclasse e substituir o método de fábrica.
+ Para suportar um novo tipo de produto, você só precisará criar uma nova subclasse e substituir o método de fábrica.
  
  ---
 
@@ -47,13 +47,13 @@ Ou seja, ao invés de criar objetos diretamente em uma classe concreta, nós def
  
  :heavy_check_mark: - Um usuário pode subclassificar facilmente algum componente em particular. Mas como o framework reconheceria essa subclasse e trabalharia com ela em vez de um componente padrão? Um usuário terá que substituir cada método que criar instâncias de componentes padrão e alterá-los para criar objetos de uma subclasse customizada. Isso é muito estranho, não é?
 
- &nbsp;&nbsp;A melhor solução seria não apenas dar a um usuário meios para estender classes particulares, mas também reduzir o código que produz componentes para um único método de criação. Em outras palavras, para fornecer os métodos de fábrica (factory methods).
+ A melhor solução seria não apenas dar a um usuário meios para estender classes particulares, mas também reduzir o código que produz componentes para um único método de criação. Em outras palavras, para fornecer os métodos de fábrica (factory methods).
 
- &nbsp;&nbsp;Vamos ver como isso funcionaria. Imagine que você escreve um aplicativo usando uma estrutura de interface do usuário de código aberto. Seu aplicativo deve ter botões redondos, mas o framework fornece apenas os quadrados.
+ Vamos ver como isso funcionaria. Imagine que você escreve um aplicativo usando uma estrutura de interface do usuário de código aberto. Seu aplicativo deve ter botões redondos, mas o framework fornece apenas os quadrados.
 
- &nbsp;&nbsp;A primeira coisa que você faz é implementar a classe `RoundButton`. Mas agora você precisa dizer à classe principal `UIFramework` para usar a nova classe de botão em vez de uma padrão.
+ A primeira coisa que você faz é implementar a classe `RoundButton`. Mas agora você precisa dizer à classe principal `UIFramework` para usar a nova classe de botão em vez de uma padrão.
 
- &nbsp;&nbsp;Para conseguir isso, você cria uma subclasse `UIWithRoundButtons` a partir de uma classe de framework base e sobrescreve seu método `createButton`. Este método ainda retorna objetos `Button` em uma classe base, mas sua nova subclasse produz objetos `RoundButtons`. Agora, no seu aplicativo, você deve inicializar o framework usando a classe `UIWithRoundButtons` em vez de` UIFramework`. E pronto!
+ Para conseguir isso, você cria uma subclasse `UIWithRoundButtons` a partir de uma classe de framework base e sobrescreve seu método `createButton`. Este método ainda retorna objetos `Button` em uma classe base, mas sua nova subclasse produz objetos `RoundButtons`. Agora, no seu aplicativo, você deve inicializar o framework usando a classe `UIWithRoundButtons` em vez de` UIFramework`. E pronto!
 
  ---
 
@@ -66,7 +66,7 @@ Ou seja, ao invés de criar objetos diretamente em uma classe concreta, nós def
   2. Quando alguém solicita um objeto, você procurará um objeto livre dentro desse pool.
   3. ...e devolvê-lo ao código do cliente.
   4. Somente se não houver objetos livres, você criará um novo (e o adicionará ao pool).
+ 
+ Este código deve ser colocado em algum lugar. O lugar mais conveniente é um construtor. Desta forma, todas essas verificações serão executadas sempre que alguém tentar criar um objeto. Mas, infelizmente, os construtores **devem** retornar novos objetos por definição, para que eles não possam retornar instâncias existentes.
 
- &nbsp;&nbsp;Este código deve ser colocado em algum lugar. O lugar mais conveniente é um construtor. Desta forma, todas essas verificações serão executadas sempre que alguém tentar criar um objeto. Mas, infelizmente, os construtores **devem** retornar novos objetos por definição, para que eles não possam retornar instâncias existentes.
-
- &nbsp;&nbsp;Por outro lado, o código do cliente, que usa seus objetos, também não pode conter. Caso contrário, saberia muitos detalhes de implementação de sua classe. Portanto, você precisa ter um único método para encapsular essa lógica. Isso seria um factory method.
+ Por outro lado, o código do cliente, que usa seus objetos, também não pode conter. Caso contrário, saberia muitos detalhes de implementação de sua classe. Portanto, você precisa ter um único método para encapsular essa lógica. Isso seria um factory method.

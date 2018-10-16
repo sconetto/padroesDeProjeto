@@ -6,7 +6,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 1. [Factory Method](src/br/padroes/FactoryMethod/FactoryMethod.md)
 
-2. [Abstract Factory](src/br/padroes/AbstractMethod/AbstractMethod.md)
+2. [Abstract Factory](src/br/padroes/AbstractFactory/AbstractFactory.md)
 
 3. [Builder](src/br/padroes/Builder/Builder.md)
 

@@ -29,3 +29,14 @@ Fornece uma interface para criar famílias de objetos relacionados ou dependente
 
 ### Contras: 
  - Aumenta a complexidade média do código criando multiplas subclasses extras.
+
+### Aplicabilidade:
+ :no_entry: - __Quando uma lógica de negócios precisa trabalhar com diferentes variantes de produtos de alguma família de produtos, mas você não quer que ela dependa de classes de produtos concretas (ou se elas são desconhecidas de antemão).__
+
+ :heavy_check_mark: - O Abstract Factory oculta informações do código do cliente sobre classes de produtos que ele cria. O código do cliente pode trabalhar com qualquer produto criado por qualquer fábrica, desde que trabalhe com eles usando as interfaces abstratas.
+
+ ---
+
+ :no_entry: - __Quando uma classe tem vários Factory Methods que obscurecem sua responsabilidade principal.__
+
+ :heavy_check_mark: - Em um programa bem projetado, _cada classe deve ser responsável apenas por uma coisa_. Quando uma classe lida com vários tipos de produtos, pode valer a pena substituir vários métodos de fábrica por uma fábrica abstrata independente.
