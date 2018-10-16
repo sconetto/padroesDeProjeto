@@ -32,7 +32,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 ## Comportamental (Behavioral Design Patterns):
 
-13. Strategy
+13. [Strategy](src/br/padroes/Strategy/Strategy.md)
 
 14. Iterator
 
