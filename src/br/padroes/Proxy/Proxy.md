@@ -1,5 +1,6 @@
 ## Proxy
 “Fornecer um substituto ou marcador da localização de outro objeto para controlar o acesso a esse objeto.”
+
 Proxy é um padrão de design estrutural que permite fornecer um substituto ou espaço reservado para outro objeto controlar o acesso a ele.
 
 ### Diagramas do Proxy:

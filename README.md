@@ -38,7 +38,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 15. Template Method
 
-16. Observer
+16. [Observer](src/br/padroes/Observer/Observer.md)
 
 17. Mediator
 
