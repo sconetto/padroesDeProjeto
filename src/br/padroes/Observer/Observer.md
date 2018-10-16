@@ -14,9 +14,12 @@ Observer (Observador) é um padrão de design comportamental que permite definir
 
 ### Exemplo:
  - Imagine que você tenha dois objetos, um `Cliente` e uma `Loja`. A loja está prestes a receber uma grande remessa de um novo produto, o que é muito interessante para alguns clientes.
- Embora os clientes possam visitar a loja todos os dias para verificar a disponibilidade do produto, a maioria dessas viagens seria inútil enquanto o produto ainda está a caminho.
- Por outro lado, a loja pode enviar toneladas de e-mails (spam) para todos os clientes cada vez que receber uma nova remessa. Mas isso perturbaria outros clientes, que não se importam com o novo produto.
- Assim, temos um conflito: ou o cliente desperdiça recursos em verificações periódicas ou a própria loja desperdiça recursos notificando os clientes errados.
+ 
+    Embora os clientes possam visitar a loja todos os dias para verificar a disponibilidade do produto, a maioria dessas viagens seria inútil enquanto o produto ainda está a caminho.
+ 
+    Por outro lado, a loja pode enviar toneladas de e-mails (spam) para todos os clientes cada vez que receber uma nova remessa. Mas isso perturbaria outros clientes, que não se importam com o novo produto.
+ 
+    Assim, temos um conflito: ou o cliente desperdiça recursos em verificações periódicas ou a própria loja desperdiça recursos notificando os clientes errados.
 
 ### Solução:
  - Vamos chamar um objeto que tenha algum estado interessante de um `Editor`. Vamos chamar outro objeto que queira rastrear as alterações nesse estado de um `Assinante`.

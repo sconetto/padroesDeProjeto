@@ -40,7 +40,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 16. [Observer](src/br/padroes/Observer/Observer.md)
 
-17. Mediator
+17. [Mediator](src/br/padroes/Mediator/Mediator.md)
 
 18. Command
 

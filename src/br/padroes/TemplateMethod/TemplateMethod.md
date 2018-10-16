@@ -16,15 +16,15 @@ A classe base declara o algoritmo 'placeholders' e as classes derivadas implemen
 ### Exemplo:
  - Imagine que você está escrevendo um aplicativo para documentos de escritório de mineração de dados. Os usuários alimentariam documentos em vários formatos (PDF, DOC, CSV) e receberiam dados uniformes úteis.
 
- A primeira versão do aplicativo poderia funcionar apenas com arquivos DOC. A edição seguinte recebeu o suporte CSV. Um mês depois, você adicionou a capacidade de extrair dados de arquivos PDF.
+    A primeira versão do aplicativo poderia funcionar apenas com arquivos DOC. A edição seguinte recebeu o suporte CSV. Um mês depois, você adicionou a capacidade de extrair dados de arquivos PDF.
 
- Em algum momento, você notou que todos os três algoritmos de análise possuem muitos códigos semelhantes. Embora fossem muito diferentes ao lidar com formatos de arquivo, a extração e a análise de dados eram quase idênticas em todos os formatos. Por isso, seria bom livrar-se da duplicação de código, deixando a estrutura do algoritmo intacta.
+    Em algum momento, você notou que todos os três algoritmos de análise possuem muitos códigos semelhantes. Embora fossem muito diferentes ao lidar com formatos de arquivo, a extração e a análise de dados eram quase idênticas em todos os formatos. Por isso, seria bom livrar-se da duplicação de código, deixando a estrutura do algoritmo intacta.
 
 
 ### Solução:
  - O padrão Template Method sugere decompor um algoritmo em uma série de etapas, transformar etapas em métodos e chamá-los um por um dentro de um único método "modelo".
 
- As subclasses poderão substituir etapas específicas, mas não o método de modelo real, deixando a estrutura do algoritmo inalterada.
+    As subclasses poderão substituir etapas específicas, mas não o método de modelo real, deixando a estrutura do algoritmo inalterada.
 
 ### Prós:
  - Ajuda a eliminar a duplicação de código.

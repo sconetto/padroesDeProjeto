@@ -14,7 +14,8 @@ Proxy é um padrão de design estrutural que permite fornecer um substituto ou e
 
 ### Exemplo:
  - Imagine que você tem um objeto poderoso que adora consumir grandes quantidades de recursos do sistema. Você precisa disso de tempos em tempos, mas nem sempre.
- Assim, o objeto provavelmente poderia ser criado não no início do programa, mas sim quando é realmente necessário. Cada cliente desse objeto precisaria ter algum tipo de código de inicialização adiada. Obviamente, isso leva a muita duplicação.
+ 
+    Assim, o objeto provavelmente poderia ser criado não no início do programa, mas sim quando é realmente necessário. Cada cliente desse objeto precisaria ter algum tipo de código de inicialização adiada. Obviamente, isso leva a muita duplicação.
 
 ### Solução:
  - O padrão Proxy sugere a criação de uma classe substituta que tenha a mesma interface que um objeto de serviço original. Ao receber a solicitação de um cliente, o objeto proxy cria uma instância de um objeto de serviço e delega todo o trabalho real.

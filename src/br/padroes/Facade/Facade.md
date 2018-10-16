@@ -14,11 +14,13 @@ Facade é um padrão de design estrutural que permite fornecer uma interface sim
 
 ### Exemplo:
  - Imagine um código que precisa trabalhar com um grande conjunto de objetos de alguma biblioteca ou estrutura complexa. Você precisa inicializar manualmente todos esses objetos, controlar as dependências, a ordem correta e assim por diante.
- No final, a lógica de negócios de suas classes se tornam fortemente acopladas aos detalhes de implementação de uma biblioteca de terceiros. Esse código é muito difícil de compreender e manter.
+    
+    No final, a lógica de negócios de suas classes se tornam fortemente acopladas aos detalhes de implementação de uma biblioteca de terceiros. Esse código é muito difícil de compreender e manter.
 
 ### Solução:
  - O Facade (Fachada) é uma classe que fornece uma interface simples para um subsistema complexo contendo dezenas de classes. A fachada pode ter funcionalidade limitada em comparação com o trabalho direto com o subsistema. No entanto, inclui apenas os recursos que os clientes realmente se importam.
- O Facade é útil quando você usa uma biblioteca sofisticada com muitas partes móveis, mas precisa apenas de uma fração de sua funcionalidade.s
+ 
+    O Facade é útil quando você usa uma biblioteca sofisticada com muitas partes móveis, mas precisa apenas de uma fração de sua funcionalidade.s
 
 ### Prós:
  - Isola clientes de componentes do subsistema.
