@@ -26,7 +26,7 @@ Repositório dedicado aos estudos de padrões de desenho de software (conhecidos
 
 10. [Facade](src/br/padroes/Facade/Facade.md)
 
-11. Proxy
+11. [Proxy](src/br/padroes/Proxy/Proxy.md)
 
 12. Flyweight
 
